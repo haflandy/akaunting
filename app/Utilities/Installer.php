@@ -126,6 +126,7 @@ class Installer
         // Set database details
         static::saveDbVariables($host, $port, $database, $username, $password);
 
+        // TODO: Dependency of max_execution_time in php.ini?
         // Try to increase the maximum execution time
         set_time_limit(600); // 10 minutes
 
